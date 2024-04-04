@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipTime.Tip"
+             Title="Tip">
+    <VerticalStackLayout>
+        
+        <Label 
+            Text="Conta"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Entry 
+            x:Name="ValueEntry"
+            Placeholder="Digite aqui o valor da conta"
+        />
+
+        <Label
+            Text="Gorjeta"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+        />
+        <Label
+            Text="R$ 0.00"
+            x:Name="TipValue"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+        />
+        
+        <Label
+            Text="Total"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+        />
+        <Label
+            Text="R$ 0.00"
+            x:Name="TotalAmount"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+        />
+        
+        <Label
+            Text="Porcentagem da gorjeta"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+         />
+        <Label
+            Text="0%"
+            x:Name="TipPer"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+         />
+        
+            
+        <Slider
+            x:Name="GorjetaSlider"
+            Minimum="0"
+            Maximum="50"
+            ValueChanged="OnGorjetaSlider_ValueChanged"
+        />
+
+        <Button 
+            Text="15%"
+            x:Name="Percentage15Button"
+            Clicked="Percentage15Button_Clicked" 
+         />
+        <Button 
+            Text="30%"
+            x:Name="Percentage30Button"
+            Clicked="Percentage30Button_Clicked" 
+         />
+        <Button 
+            Text="Arredondar para baixo"
+            x:Name="RoundDownButton"
+            Clicked="RoundDownButton_Clicked" 
+        />
+        <Button 
+            Text="Arredondar para cima"
+            x:Name="RoundUpButton"
+            Clicked="RoundUpButton_Clicked" 
+         />
+
+    </VerticalStackLayout>
+</ContentPage>
