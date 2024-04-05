@@ -7,9 +7,18 @@
     Shell.FlyoutBehavior="Disabled"
     Title="TipTime">
 
-    <ShellContent
+    <TabBar>
+
+        <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+        <ShellContent
+        Title="Tip"
+        ContentTemplate="{DataTemplate local:Tip}"
+        Route="Tip" />
+
+    </TabBar>
 
 </Shell>

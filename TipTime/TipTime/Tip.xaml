@@ -9,11 +9,14 @@
             Text="Conta"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Entry
+    x:Name="ValueEntry"
+    Placeholder="Digite aqui o valor da conta"
+    TextChanged="ValueEntry_TextChanged"
+/>
+
         
-        <Entry 
-            x:Name="ValueEntry"
-            Placeholder="Digite aqui o valor da conta"
-        />
 
         <Label
             Text="Gorjeta"
@@ -37,6 +40,7 @@
             x:Name="TotalAmount"
             VerticalOptions="Center"
             HorizontalOptions="Center"
+           
         />
         
         <Label
@@ -57,6 +61,7 @@
             Minimum="0"
             Maximum="50"
             ValueChanged="OnGorjetaSlider_ValueChanged"
+
         />
 
         <Button 
